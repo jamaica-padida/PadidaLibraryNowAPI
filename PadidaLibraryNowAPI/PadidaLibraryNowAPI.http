@@ -1,0 +1,6 @@
+@PadidaLibraryNowAPI_HostAddress = http://localhost:5210
+
+GET {{PadidaLibraryNowAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
