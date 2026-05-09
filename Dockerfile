@@ -11,5 +11,5 @@ RUN dotnet publish "PadidaLibraryNowAPI/PadidaLibraryNowAPI.csproj" -c Release -
 
 FROM base AS final
 WORKDIR /app
-COPY --FROM=build /app/out
+COPY --from=build /app/out .
 ENTRYPOINT ["dotnet", "PadidaLibraryNowAPI.dll"]
